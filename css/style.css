@@ -50,8 +50,8 @@ img {
   width: 100%;
 }
 
-.logo {
-  width: 30%;
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -97,6 +97,7 @@ h4 {
 a {
   color: #1a1b1f;
   text-decoration: none;
+    transition: 0.6s;
 }
 
 a:hover,
@@ -150,4 +151,87 @@ a:active {
 
 .button:active {
   color: #222222;
+}
+
+/* Layout styling */
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+#hero {
+  text-align: center;
+  /* Centers text */
+  }
+
+#work h4 {
+  text-align: center;
+  /* Centers text */
+}
+
+#work p {
+  text-align: center;
+  /* Centers text */
+}
+
+#contact {
+  text-align: center;
+  /* Centers text */
+  }
+
+.logo {
+  max-width: 250px;
+}
+
+header {
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  font-size: 12px;
+  padding: 0 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgba(26, 27, 31, 0.6);
+}
+
+nav>ul>li>a:hover {
+  color: rgba(26, 27, 31, 1);
+}
+
+.footer-menu>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-menu>ul>li {
+  display: inline-block;
+}
+
+.footer-menu>ul>li>a {
+  font-size: 12px;
+  padding: 0 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgba(26, 27, 31, 0.6);
 }
