@@ -46,6 +46,7 @@ Secondary Color (Green): #489c79;
   src: local('bw-vivant-black bw-vivant-black'), url('bw-vivant-bold.woff') format('woff');
 }
 
+
 img {
   width: 100%;
 }
@@ -69,11 +70,12 @@ body {
 h1, h2, h3, h4 {
   line-height: 1.4;
   font-family: 'Bw Vivant Light';
+    color: #333333;
 }
 
 h1 {
-  font-size: 54px;
-  color: #333333;
+  font-size: 36px;
+
 }
 
 .h1.bold {
@@ -87,6 +89,7 @@ h2 {
 
 h3 {
   font-size: 28px;
+  font-weight: 600;
 }
 
 h4 {
@@ -234,4 +237,115 @@ nav>ul>li>a:hover {
   font-weight: 600;
   text-transform: uppercase;
   color: rgba(26, 27, 31, 0.6);
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+
+}
+
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+  .logo {
+    max-width: 400px;
+  }
+
+  h1 {
+    font-size: 54px;
+}
+    #hero {
+      text-align: left;
+          max-width: 1140px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 100px;
+          margin-bottom: 100px;
+      }
+
+  .col-ld-7 {
+    width: 60%;
+      float: left;
+      padding-right: 12px;
+  }
+
+  .col-ld-5 {
+      width: 40%;
+    float: right;
+    min-height: 400px;
+    padding-left: 12px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+  .container {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+
+
+
+/* ==============================
+CSS Animation
+================================= */
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
