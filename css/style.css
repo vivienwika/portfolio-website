@@ -46,7 +46,6 @@ Secondary Color (Green): #489c79;
   src: local('bw-vivant-black bw-vivant-black'), url('bw-vivant-bold.woff') format('woff');
 }
 
-
 img {
   width: 100%;
 }
@@ -56,7 +55,7 @@ img {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   /* Sets the font size to 16px */
@@ -70,12 +69,11 @@ body {
 h1, h2, h3, h4 {
   line-height: 1.4;
   font-family: 'Bw Vivant Light';
-    color: #333333;
+  color: #333;
 }
 
 h1 {
   font-size: 36px;
-
 }
 
 .h1.bold {
@@ -100,7 +98,7 @@ h4 {
 a {
   color: #1a1b1f;
   text-decoration: none;
-    transition: 0.6s;
+  transition: 0.6s;
 }
 
 a:hover,
@@ -110,7 +108,7 @@ a:focus {
 
 a:visited {
   /* visited link */
-  color: #222222;
+  color: #222;
 }
 
 a:active {
@@ -122,7 +120,7 @@ a:active {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #e9e7e1;
-  color: #222222;
+  color: #222;
   font-size: 13px;
   /* needed to override the default link color */
   font-weight: 500;
@@ -142,8 +140,8 @@ a:active {
 }
 
 .button:hover {
-  background-color: #333333;
-  color: #ffffff;
+  background-color: #333;
+  color: #fff;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
@@ -153,7 +151,7 @@ a:active {
 }
 
 .button:active {
-  color: #222222;
+  color: #222;
 }
 
 /* Layout styling */
@@ -170,7 +168,7 @@ a:active {
 #hero {
   text-align: center;
   /* Centers text */
-  }
+}
 
 #work h4 {
   text-align: center;
@@ -185,7 +183,7 @@ a:active {
 #contact {
   text-align: center;
   /* Centers text */
-  }
+}
 
 .logo {
   max-width: 150px;
@@ -204,7 +202,6 @@ nav>ul {
   list-style-type: none;
   padding: 0;
 }
-
 
 nav>ul>li>a {
   font-size: 12px;
@@ -254,13 +251,14 @@ nav>ul>li>a:hover {
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   border-top: 1px solid #eee;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -296,41 +294,39 @@ Medium devices (640px and larger)
   }
 
   .navtoggle li:last-child {
-  display: none;
+    display: none;
+  }
 }
-
-}
-
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-
   .logo {
     max-width: 400px;
   }
 
   h1 {
     font-size: 54px;
-}
-    #hero {
-      text-align: left;
-          max-width: 1140px;
-          margin-left: auto;
-          margin-right: auto;
-          margin-top: 100px;
-          margin-bottom: 100px;
-      }
-
-  .col-ld-7 {
-    width: 60%;
-      float: left;
-      padding-right: 12px;
   }
 
-  .col-ld-5 {
-      width: 40%;
+  #hero {
+    text-align: left;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .column-col-ld-7 {
+    width: 60%;
+    float: left;
+    padding-right: 12px;
+  }
+
+  .column-col-ld-5 {
+    width: 40%;
     float: right;
     min-height: 400px;
     padding-left: 12px;
@@ -342,18 +338,14 @@ Large devices (1024px or larger)
     display: table;
   }
 
-
   .container {
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
   }
-
 }
-
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
+@media only screen and (min-width: 1440px) {}
